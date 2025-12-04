@@ -11,7 +11,7 @@ EEE 120 Capstone: Design and simulation of a synchronous 6-state traffic light c
 **Instructor:** Steven Millman  
 **Date:** May 1, 2025  
 
-This repository hosts the **Capstone Design Project** for EEE 120: a fully functional **Synchronous Sequential Traffic Light Controller**. Designed to replace manual timing with robust digital logic, this system manages traffic flow, ensures pedestrian safety, and includes dynamic operational modes[cite: 2, 27].
+This repository hosts the **Capstone Design Project** for EEE 120: a fully functional **Synchronous Sequential Traffic Light Controller**. Designed to replace manual timing with robust digital logic, this system manages traffic flow, ensures pedestrian safety, and includes dynamic operational modes.
 
 The project documents the full engineering lifecycle—from stakeholder interviews and value proposition analysis to logic minimization, circuit simulation, and final validation.
 
@@ -19,10 +19,10 @@ The project documents the full engineering lifecycle—from stakeholder intervie
 
 ## 🧠 Design Philosophy & Value
 We didn't just build a circuit; we solved a problem.
-* **Technological:** Replaced analog timers with a precision digital logic system[cite: 27].
-* **Societal:** Enhanced road safety with clear, rule-based transitions[cite: 28].
-* **Financial:** Reduced the need for human traffic personnel[cite: 29].
-* **Environmental:** Optimized flow to reduce engine idling and emissions[cite: 30].
+* **Technological:** Replaced analog timers with a precision digital logic system.
+* **Societal:** Enhanced road safety with clear, rule-based transitions.
+* **Financial:** Reduced the need for human traffic personnel.
+* **Environmental:** Optimized flow to reduce engine idling and emissions.
 
 ---
 
@@ -30,14 +30,14 @@ We didn't just build a circuit; we solved a problem.
 The design was shaped by real-world input from three key stakeholders:
 
 1.  **Kavya (Roommate):**
-    * *Need:* Pedestrian safety & clear light patterns [cite: 13-14].
-    * *Feature:* **Emergency Override Mode**[cite: 15].
+    * *Need:* Pedestrian safety & clear light patterns.
+    * *Feature:* **Emergency Override Mode**.
 2.  **Prince (CSE Major):**
-    * *Need:* Debugging simplicity & startup safety[cite: 17].
-    * *Feature:* **All-Red State** & **Asynchronous Reset** [cite: 18-19].
+    * *Need:* Debugging simplicity & startup safety.
+    * *Feature:* **All-Red State** & **Asynchronous Reset**.
 3.  **Daksh (CSE Major):**
-    * *Need:* Gate efficiency & dynamic toggling[cite: 21, 23].
-    * *Feature:* **"Surprise Mode"** & logic minimization[cite: 21].
+    * *Need:* Gate efficiency & dynamic toggling.
+    * *Feature:* **"Surprise Mode"** & logic minimization.
 
 ---
 
@@ -51,18 +51,18 @@ The controller operates on a 6-state machine utilizing **D-Flip-Flops**:
 * **S3 (011):** Side Green
 * **S4 (100):** Side Yellow
 * **S5 (101):** *Reserved/Intermediate*
-[cite: 109]
+
 
 ### Operational Modes (Input C[1:0])
 | Mode | Input (C) | Behavior |
 | :--- | :---: | :--- |
-| **Normal Cycle** | `00` | Standard traffic flow: All Red → Main Green → Yellow → Side Green → Yellow → All Red[cite: 45]. |
-| **4-Way Flash** | `01` | **Main Red** and **Side Red** toggle alternately (simulating a 4-way stop)[cite: 52]. |
-| **Priority Flash** | `10` | **Side Red** toggles, while **Main Yellow** stays permanently ON [cite: 54-55]. |
-| **Surprise Mode** | `11` | Both **Main Green** and **Side Green** toggle every cycle for rapid crossing[cite: 57]. |
+| **Normal Cycle** | `00` | Standard traffic flow: All Red → Main Green → Yellow → Side Green → Yellow → All Red. |
+| **4-Way Flash** | `01` | **Main Red** and **Side Red** toggle alternately (simulating a 4-way stop). |
+| **Priority Flash** | `10` | **Side Red** toggles, while **Main Yellow** stays permanently ON. |
+| **Surprise Mode** | `11` | Both **Main Green** and **Side Green** toggle every cycle for rapid crossing. |
 
 ### Minimized Logic Equations (Design #1)
-The final circuit was optimized for gate efficiency using the following Boolean equations [cite: 110-115]:
+The final circuit was optimized for gate efficiency using the following Boolean equations:
 
 ```math
 MG = A'BC'
