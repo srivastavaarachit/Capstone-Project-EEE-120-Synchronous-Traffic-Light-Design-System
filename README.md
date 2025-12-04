@@ -1,12 +1,12 @@
 # Capstone-Project-EEE-120-Synchronous-Traffic-Light-Design-System
 EEE 120 Capstone: Design and simulation of a synchronous 6-state traffic light controller using D-flip-flops. Features standard cycling, 4-way flash, and dynamic toggling modes. Includes full engineering lifecycle documentation: stakeholder reqs, state diagrams, minimized logic, and Digital software simulations.
-# 🚦 Synchronous Traffic Light Controller | EEE 120 Capstone
+# Synchronous Traffic Light Controller | EEE 120 Capstone
 
 ![Project Status](https://img.shields.io/badge/Status-Complete-success)
 ![Tool](https://img.shields.io/badge/Simulation-Digital-blue)
 ![Course](https://img.shields.io/badge/Course-EEE%20120-maroon)
 
-## 📖 Project Overview
+## Project Overview
 **Author:** Rachit Srivastava  
 **Instructor:** Steven Millman  
 **Date:** May 1, 2025  
@@ -17,7 +17,7 @@ The project documents the full engineering lifecycle—from stakeholder intervie
 
 ---
 
-## 🧠 Design Philosophy & Value
+## Design Philosophy & Value
 We didn't just build a circuit; we solved a problem.
 * **Technological:** Replaced analog timers with a precision digital logic system.
 * **Societal:** Enhanced road safety with clear, rule-based transitions.
@@ -26,7 +26,7 @@ We didn't just build a circuit; we solved a problem.
 
 ---
 
-## 👥 Stakeholder Feedback & Requirements
+## Stakeholder Feedback & Requirements
 The design was shaped by real-world input from three key stakeholders:
 
 1.  **Kavya (Roommate):**
@@ -41,7 +41,7 @@ The design was shaped by real-world input from three key stakeholders:
 
 ---
 
-## ⚙️ Technical Specifications
+## Technical Specifications
 
 ### System States
 The controller operates on a 6-state machine utilizing **D-Flip-Flops**:
