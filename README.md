@@ -28,13 +28,13 @@ We didn't just build a circuit; we solved a problem.
 ## Stakeholder Feedback & Requirements
 The design was shaped by real-world input from three key stakeholders:
 
-1.  **Kavya (Roommate):**
+1.  **Friend 1 (Roommate):**
     * *Need:* Pedestrian safety & clear light patterns.
     * *Feature:* **Emergency Override Mode**.
-2.  **Prince (CSE Major):**
+2.  **Friend 2 (CSE Major):**
     * *Need:* Debugging simplicity & startup safety.
     * *Feature:* **All-Red State** & **Asynchronous Reset**.
-3.  **Daksh (CSE Major):**
+3.  **Friend 3 (CSE Major):**
     * *Need:* Gate efficiency & dynamic toggling.
     * *Feature:* **"Surprise Mode"** & logic minimization.
 
