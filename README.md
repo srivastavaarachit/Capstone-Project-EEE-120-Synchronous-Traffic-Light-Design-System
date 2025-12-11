@@ -4,7 +4,6 @@ Design and simulation of a synchronous 6-state traffic light controller using D-
 
 ![Project Status](https://img.shields.io/badge/Status-Complete-success)
 ![Tool](https://img.shields.io/badge/Simulation-Digital-blue)
-![Course](https://img.shields.io/badge/Course-EEE%20120-maroon)
 
 ## Project Overview
 **Author:** Rachit Srivastava  
